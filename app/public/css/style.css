@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Asap|Open+Sans:300');
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300 !important
+}
+
+/* Modules will scale with document */
+.header {
+  font-size: 1.5rem;
+  min-height: 300px;
+}
+.footer {
+  font-size: 0.75rem;
+}
+.sidebar {
+  font-size: 0.85rem;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+
+p, li, a{
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+li {
+  font-weight: 100;
+}
+
+a {
+  font-size: 0.8rem !important;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nodex-header {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
+
+.nodex-header-inner {
+  height: 40vh;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background: url('../img/daisy-andrew-small.jpg') no-repeat top center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.nodex-nav {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  text-align: right;
+  margin-top: -100px;
+  z-index: 200;
+  height: 100px;
+}
+
+.nodex-nav a, .nodex-header h1 {
+  color: white;
+}
+
+.nodex-header h1 {
+  transform: translateY(100px);
+}
+
+
+.nodex-header ul  {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: bottom;
+}
+
+.nodex-header ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.nodex-nav-link {
+  display: block;
+  padding: 20px;
+  float: right;
+  margin-left: 10px;
+  opacity: 0.8;
+  min-width: 15%;
+  border-bottom: 5px solid purple;
+  min-height: 100px;
+}
+
+.nodex-nav-link#nav-home  {
+  opacity: 1.0;
+  border-bottom: 5px solid purple;
+
+}
+
+#nav-dropdown-list{
+  position: absolute;
+  background-color: purple;
+  right: 0;
+  top: 100px;
+  z-index: 300;
+  min-width: 200px;
+  padding: 15px;
+  margin-top: -5px;
+}
+
+#nav-dropdown{
+  right: 0;
+  position: relative;
+}

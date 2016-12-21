@@ -1,0 +1,21 @@
+<div class="nodex-header-inner">
+  <h1>Header</h1>
+
+</div>
+<nav class="nodex-nav">
+
+    <div id ="nav-home" class="nodex-nav-link"><a href="/">Home</a></div>
+    <div id ="nav-locations"class="nodex-nav-link"><a href="/locations">All Locations</a></div>
+    <div id ="nav-feedback"class="nodex-nav-link"><a href="/feedback">Feedback</a></div>
+    <div id ="nav-lorem"class="nodex-nav-link"><a href="#">Lorem</a></div>
+    <div id ="nav-dropdown"class="nodex-nav-link">
+      <a href="#">Veggie made</a>
+      <ul id ="nav-dropdown-list" class="nodex-dropdown">
+
+        <% allLocations.forEach(function(item){ %>
+          <li><a href="/locations/<%= item.shortname %>"><%=item.name %></a></li>
+        <% }); %>
+      </ul>
+    <div>
+
+</nav>

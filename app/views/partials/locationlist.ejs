@@ -1,0 +1,16 @@
+<div class="row">
+  <% pageLocation.forEach(function(item){  %>
+    <article class="<% if (pageID == 'home') { %> four columns  <% } else { %> nine columns  <% } %>">
+      <h2><%= item.name %></h2>
+      <p><a href="/locations/<%= item.id %>">Bloop</a></p>
+      <img src="/img/<%= item.images[0] %>" alt="Main Image of <%= item.name %>" width="100%">
+
+        <% if(pageID == 'location-detail'){ %>
+          <%- item.description %>
+        <% } else { %>
+          <%- item.summary %>
+        <% } %>
+
+    </article>
+  <% }); %>
+</div>

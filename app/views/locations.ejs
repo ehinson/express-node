@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include partials/_head.ejs %>
+</head>
+<body id="<%= pageID %>">
+  <header class="nodex-header header">
+    <% include partials/header.ejs %>
+  </header>
+  <section class="nodex-section">
+    <div class="nodex-section-inner">
+      <% include partials/locationlist.ejs %>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-inner">
+      <% include partials/footer.ejs %>
+    </div>
+  </footer>
+  <script src="/reload/reload.js"></script>
+</body>
+</html>
