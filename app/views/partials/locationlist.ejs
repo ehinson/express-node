@@ -1,5 +1,11 @@
-<div class="row">
+
+<% if (pageID == 'home') {%>
+  <div class="row">
+<% } %>
   <% pageLocation.forEach(function(item){  %>
+    <% if (pageID !== 'home') {%>
+      <div class="row">
+    <% } %>
     <article class="<% if (pageID == 'home') { %> four columns  <% } else { %> nine columns  <% } %>">
       <h2><%= item.name %></h2>
       <p><a href="/locations/<%= item.id %>">Bloop</a></p>
@@ -12,5 +18,10 @@
         <% } %>
 
     </article>
+    <% if (pageID !== 'home') {%>
+      </div>
+    <% } %>
   <% }); %>
-</div>
+<% if (pageID == 'home') {%>
+  </div>
+<% } %>
