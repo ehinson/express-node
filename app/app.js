@@ -16,6 +16,8 @@ app.locals.allLocations = dataFile.locations;
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/locations'));
+app.use(require('./routes/feedback'));
+app.use(require('./routes/api'));
 
 var server = app.listen(app.get('port'), function () {
   console.log('Listening on Port ' + app.get('port'));

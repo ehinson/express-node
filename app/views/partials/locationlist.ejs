@@ -1,5 +1,11 @@
-<div class="row">
+
+<% if (pageID == 'home') {%>
+  <div class="row">
+<% } %>
   <% pageLocation.forEach(function(item){  %>
+    <% if (pageID !== 'home') {%>
+      <div class="row">
+    <% } %>
     <article class="<% if (pageID == 'home') { %> four columns  <% } else { %> nine columns  <% } %>">
 
 
@@ -15,5 +21,10 @@
       </figure>
 
     </article>
+    <% if (pageID !== 'home') {%>
+      </div>
+    <% } %>
   <% }); %>
-</div>
+<% if (pageID == 'home') {%>
+  </div>
+<% } %>

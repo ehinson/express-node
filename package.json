@@ -1,15 +1,24 @@
 {
   "name": "express-node",
   "version": "1.0.0",
-  "description": "",
   "main": "app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app/app.js --watch app"
   },
-  "author": "Erin (Q) Hinson",
+  "author": "Erin (Q)",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehinson/express-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehinson/express-node/issues"
+  },
+  "homepage": "https://github.com/ehinson/express-node#readme",
+  "description": ""
 }
