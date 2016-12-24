@@ -4,6 +4,21 @@
   $(document).ready(function(){
     var pageID = $('body').attr('id');
     console.log(pageID);
+    $('#nav-dropdown').on('click', function() {
+        if ($(this).hasClass('open')){
+          $('#nav-dropdown-list').animate({
+            height: "0"
+          }, 600);
+          $('#nav-dropdown').removeClass('open');
+        }
+        else {
+          $('#nav-dropdown-list').animate({
+            height: "110px"
+          }, 600);
+          $('#nav-dropdown').addClass('open');
+        }
+
+    });
   });
   </script>
 </div>

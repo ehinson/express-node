@@ -101,6 +101,7 @@ a {
   text-decoration: none;
   list-style-type: none;
   margin-bottom: 0;
+  padding: 5px 15px;
 }
 
 .nodex-nav-link {
@@ -127,11 +128,35 @@ a {
   top: 100px;
   z-index: 300;
   min-width: 200px;
-  padding: 15px;
   margin-top: -5px;
+  height: 0;
+  padding: 0;
+  border-top: 5px solid purple;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 #nav-dropdown{
   right: 0;
   position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 25px;
+}
+
+figure {
+  position: relative;
+  transition: all 0.3s;
+  margin: 0;
+}
+figcaption  {
+  position: absolute;
+  top: 0;
+}
+figcaption:hover {
+  transform: translateY(250px);
+  transition: all 0.3s;
+
 }
