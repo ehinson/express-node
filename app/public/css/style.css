@@ -207,3 +207,10 @@ figcaption:hover {
 .nodex-section {
   margin-top: 30px;
 }
+
+.chat.content{
+  background-color: (0, 0, 0, 0.1);
+  border: 1px solid lightgray;
+  height: 250px;
+  overflow: scroll;
+}
