@@ -14,7 +14,8 @@ router.get('/locations', function (req, res) {
     pageTitle: 'Locations',
     artwork: photos,
     pageID: 'locations',
-    pageLocation: data.locations
+    pageLocation: data.locations,
+
 
   });
 });

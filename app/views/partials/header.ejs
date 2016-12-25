@@ -1,13 +1,16 @@
 <div class="nodex-header-inner">
-  <h1>Header</h1>
-
+  <% if (pageID == "location-detail"){ %>
+    <h1><%= pageLocation[0].name %></h1>
+  <% }else { %>
+    <h1><%= pageTitle %></h1>
+  <% } %>
 </div>
 <nav class="nodex-nav">
 
     <div id ="nav-home" class="nodex-nav-link"><a href="/">Home</a></div>
     <div id ="nav-locations"class="nodex-nav-link"><a href="/locations">All Locations</a></div>
     <div id ="nav-feedback"class="nodex-nav-link"><a href="/feedback">Feedback</a></div>
-    <div id ="nav-lorem"class="nodex-nav-link"><a href="#">Lorem</a></div>
+    <div id ="nav-chat"class="nodex-nav-link"><a href="/chat">Chat</a></div>
     <div id ="nav-dropdown"class="nodex-nav-link">
       <a href="#">Veggie made</a>
       <ul id ="nav-dropdown-list" class="nodex-dropdown">
@@ -19,3 +22,8 @@
     <div>
 
 </nav>
+<div class="stripe-container">
+  <div class="stripe">
+    
+  </div>
+</div>

@@ -18,6 +18,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/locations'));
 app.use(require('./routes/feedback'));
 app.use(require('./routes/api'));
+app.use(require('./routes/chat'));
 
 var server = app.listen(app.get('port'), function () {
   console.log('Listening on Port ' + app.get('port'));
