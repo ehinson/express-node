@@ -4,11 +4,12 @@
   "main": "app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app/app.js --watch app"
+    "start": "nodemon app/app.js --watch app --ignore feedback.json"
   },
-  "author": "Erin (Q)",
+  "author": "Erin (Q) Hinson",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "ejs": "^2.5.5"
   },
   "devDependencies": {},
