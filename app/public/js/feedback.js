@@ -1,13 +1,15 @@
 $(function() {
   $.getJSON('api', updateFeedback);
 
+  var output = '';
   function updateFeedback(data) {
-    var output = '';
 
     $.each(data, function(key, item) {
-      $.each(item, function (key1, child) {
-         output += child;
-      })
+        if (typeof(item) == 'object'){
+          updateFeedback(item);
+        }else {
+          output += item + '<br>';
+        }
     });
 
     $('.feedback-messages').html(output);
